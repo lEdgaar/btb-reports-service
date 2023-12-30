@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TransactionReport" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3cae37df-3b35-4dec-bedb-2e6e180d5b9f">
+	<field name="id" class="java.lang.Long"/>
+	<field name="createdAt" class="java.util.Date"/>
+	<field name="transactionType" class="java.lang.Long"/>
+	<field name="quantity" class="java.lang.Long"/>
+	<field name="asset" class="java.lang.String"/>
+	<field name="priceUnit" class="java.lang.Double"/>
+	<field name="user" class="java.lang.Long"/>
+	<title>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="c553aca1-fa85-4ab2-b709-610ff153e1a7"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="20" uuid="32b60abe-6c62-48c3-ad89-ea068f8226f8"/>
+				<text><![CDATA[Created At]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="100" height="20" uuid="c8d62a0f-1c0a-4884-a2fe-180f93d6890d"/>
+				<text><![CDATA[Transaction Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="100" height="20" uuid="16b9ac79-1ae6-420b-8e15-d261450fdd3e"/>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="100" height="20" uuid="1ea17219-dca2-4847-a9b6-9c418a8d7564"/>
+				<text><![CDATA[Asset]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="0" width="100" height="20" uuid="508f9398-5d2d-4b93-99d0-a74919a6d45b"/>
+				<text><![CDATA[Price Unit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="600" y="0" width="100" height="20" uuid="0fb15819-529f-44af-8df8-0eefee897537"/>
+				<text><![CDATA[User]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="0f2d8f64-fb8a-4dd6-93c1-9bab934ce9cc"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20" uuid="2e4cee78-bdf8-4908-adb1-94c5394418e4"/>
+				<textFieldExpression><![CDATA[$F{createdAt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="20" uuid="12586ee4-3bc9-4deb-a5ca-66f77741ce26"/>
+				<textFieldExpression><![CDATA[$F{transactionType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="20" uuid="f3c6d7e6-3207-412b-8f94-df8c7a1c051c"/>
+				<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="100" height="20" uuid="8ac6ba69-98ba-4f30-b584-f7221d9df8fe"/>
+				<textFieldExpression><![CDATA[$F{asset}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="100" height="20" uuid="a7715d9e-be24-42a4-bae7-bcd8e4060d75"/>
+				<textFieldExpression><![CDATA[$F{priceUnit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="0" width="100" height="20" uuid="187de48b-f960-4ff9-9f98-322ca04282fa"/>
+				<textFieldExpression><![CDATA[$F{user}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
