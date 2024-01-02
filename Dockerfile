@@ -1,8 +1,7 @@
 FROM maven:3.8.4-openjdk-17-slim AS build
 WORKDIR /home/app/src
-COPY pom.xml /home/app
-COPY src ./src
-RUN mvn -f /home/app/pom.xml clean install spring-boot:repackage
+COPY btb-reports-service/pom.xml /home/app
+COPY btb-reports-service/src ./src
 RUN mvn -f /home/app/pom.xml clean package
 
 FROM openjdk:17-jdk-slim
